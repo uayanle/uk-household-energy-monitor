@@ -1,5 +1,7 @@
 import pandas as pd
 
+# carbon factor
+
 
 def load_carbon_factor():
     """Load the carbon factor from the CSV file and return the kg CO₂ per kWh."""
@@ -8,6 +10,8 @@ def load_carbon_factor():
 
     carbon_factor = carbon_df.loc[0, 'kgCO2_per_kWh']
     return carbon_factor
+
+# electricity tariffs
 
 
 def load_tariff():

@@ -1,6 +1,6 @@
-# UK Household Energy Monitor
+# UK Household Energy Monitor:
 
-## Features
+## Features:
 
 - Calculates daily, monthly and annual electricity costs
 - Calculates annual CO₂ emissions
@@ -12,7 +12,7 @@
 ---
 
 
-### Example console output
+### Example console output:
 ![Console Output](console-ouput.png)
 
 ---

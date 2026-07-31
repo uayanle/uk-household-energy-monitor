@@ -92,8 +92,11 @@ print(f'Total daily cost: £{total_daily_cost:.2f}')
 print(f'Total annual cost: £{total_annual_cost:.2f}')
 print(f'Total annual emissions: {total_emissions:.2f}')
 
+# results
+
 df.to_csv('outputs/results.csv', index=False)
 annual_cost_chart(df)
+
 
 df.to_csv('outputs/results.csv', index=False)
 daily_energy_chart(df)

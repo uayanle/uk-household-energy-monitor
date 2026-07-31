@@ -1,4 +1,5 @@
 
+# calculations for mainpy
 
 def calculate_energy(power_watts, hours_used):
     power_kw = power_watts / 1000

@@ -1,4 +1,9 @@
 import pandas as pd
+
+from graphs import annual_cost_chart
+from graphs import daily_energy_chart
+
+
 from calculations import calculate_annual_cost
 from calculations import calculate_daily_cost
 from calculations import calculate_emissions
@@ -7,6 +12,7 @@ from calculations import calculate_monthly_cost
 
 from file_handler import load_carbon_factor
 from file_handler import load_tariff
+
 
 print("=" * 50)
 print("      UK Household Energy Monitor")
@@ -85,3 +91,10 @@ print('Household total')
 print(f'Total daily cost: £{total_daily_cost:.2f}')
 print(f'Total annual cost: £{total_annual_cost:.2f}')
 print(f'Total annual emissions: {total_emissions:.2f}')
+
+df.to_csv('outputs/results.csv', index=False)
+print(df.columns)
+annual_cost_chart(df)
+
+df.to_csv('outputs/results.csv', index=False)
+daily_energy_chart(df)

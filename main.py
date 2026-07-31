@@ -93,7 +93,6 @@ print(f'Total annual cost: £{total_annual_cost:.2f}')
 print(f'Total annual emissions: {total_emissions:.2f}')
 
 df.to_csv('outputs/results.csv', index=False)
-print(df.columns)
 annual_cost_chart(df)
 
 df.to_csv('outputs/results.csv', index=False)
